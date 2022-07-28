@@ -1,0 +1,119 @@
+/*
+
+
+light blue - rgb(70, 137, 244)
+dark blue - rgb(186, 212, 255)
+
+bold orange - rgb(299, 158, 66)
+light orange - rgb(255, 227, 191)
+
+font-family: 'Edu NSW ACT Foundation', cursive;
+font-family: 'Cormorant SC', serif;
+
+*/
+
+.content {
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+.sidebar {
+    animation-name: fade-in;
+    animation-duration: 2s;
+}
+
+
+
+img {
+    width: 400px;
+    height: 200px;
+    transition: 0.5 all;
+}
+
+img:hover {
+    height: 250px;
+    width: 500px;
+}
+
+body {
+    background:  rgb(186, 212, 255, 0.5);
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-gap: 50px
+}
+
+p {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+li {
+    font-family: 'Edu NSW ACT Foundation', cursive;
+}
+
+h1 {
+    font-family: 'Cormorant SC', serif;
+    font-weight: 600; /* Determines the bolding and thickness of our text */
+}
+
+h2 {
+    font-family: 'Cormorant SC', serif;
+}
+
+.image-grid {
+    display: flexbox;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.image-grid > img {
+    margin: 10px;
+}
+
+#image-1 {
+    float: right;
+    margin: 15px; 
+}
+
+.post {
+    border: 6px solid rgb(28, 28, 79);
+}
+
+.post-title {
+    margin-left: 5px;
+}
+
+.post-text {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.sidebar {
+    background: rgb(255, 227, 191);
+}
+
+.post > a {
+    margin-left: 5px;
+    margin-right: 5px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.post > a:hover {
+    color: rgb(186, 212, 255);
+}
+
+@keyframes fade-in {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.main-para {
+    text-transform: capitalize;
+}
+
+.italics {
+    font-style: italic; /* to style the font of a particular part of your work */
+}
